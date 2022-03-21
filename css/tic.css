@@ -1,0 +1,29 @@
+h1 {
+    text-align: center;
+    color: blue;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.board {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    padding: 10px;
+    border-color: #f321ad;
+    background-color: #f321ad;
+
+  }
+  .board-square {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    
+  }
+
