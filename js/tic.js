@@ -11,6 +11,7 @@ const move = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 const randomIndex = Math.random() * move.length;
 
 computer.move = move[randomIndex];
+
 player.move = .board-square.click()
 
 for (let i = 0; i = <= move.length; i++) {
@@ -30,18 +31,33 @@ for (let i = 0; i = <= move.length; i++) {
     console.log('Player Wins!')
     if (player.move = move[2] && move[4] && move[6])
     console.log('Player Wins!')
-    //if computer move =is player move don't allow
-
     
+    //To do:
+    //if move is selected by computer, don't allow player to select.
+
+
 }
-    
 
-    
+for (let i = 0; i = <= move.length; i++) {
+    if (computer.move = move[0] && move[1] && move[2])
+    console.log('Computer Wins!')
+    if (computer.move = move[3] && move[4] && move[5])
+    console.log('Computer Wins!')
+    if (computer.move = move[6] && move[7] && move[8])
+    console.log('Computer Wins!')
+    if (computer.move = move[0] && move[3] && move[6])
+    console.log('Computer Wins!')
+    if (computer.move = move[1] && move[4] && move[7])
+    console.log('Computer Wins!')
+    if (computer.move = move[2] && move[5] && move[8])
+    console.log('Computer Wins!')
+    if (computer.move = move[0] && move[4]&& move [8])
+    console.log('Computer Wins!')
+    if (computer.move = move[2] && move[4] && move[6])
+    console.log('Computer Wins!')
+
+    //To do:
+    //if move is selected by computer, don't allow player to select.
 
 
-
-
-
-
-//console.log(computer)
-
+}
