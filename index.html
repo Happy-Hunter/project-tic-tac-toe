@@ -10,33 +10,34 @@
         <meta name="description" content="Play noughts and crosses online for free!">
 
         <link rel="stylesheet" href="./css/tic.css">
-        <script src="./js/tic.js"></script>
-        <script src="./js/jquery.js"></script>
+        
     </head>
     <body>
         <div class="container">
             <header>
             
                 <nav></nav>
-                <h1>Circles & Boxes!</h1>
+                <h1>Noughts & crosses</h1>
 
             </header>
         <div class="board">
-        <div class="board-square">1</div>
-        <div class="board-square">2</div>
-        <div class="board-square">3</div>
-        <div class="board-square">4</div>
-        <div class="board-square">5</div>
-        <div class="board-square">6</div>
-        <div class="board-square">7</div>
-        <div class="board-square">8</div>
-        <div class="board-square">9</div>
+        <div class="board-square" id="1"></div>
+        <div class="board-square" id="2"></div>
+        <div class="board-square" id="3"></div>
+        <div class="board-square" id="4"></div>
+        <div class="board-square" id="5"></div>
+        <div class="board-square" id="6"></div>
+        <div class="board-square" id="7"></div>
+        <div class="board-square" id="8"></div>
+        <div class="board-square" id="9"></div>
         </div>    
     
-        <div class="winner-alert">
-           <button>Restart</button>
+           
+        <button class="reset">Reset</button>
 
         </div>
-    
+
+        <script src="./js/jquery.js"></script>
+        <script src="./js/tic.js"></script>    
     </body>
     </html>

@@ -1,63 +1,99 @@
-console.log('ding-ding-ding!')
 
-let player = 'x'
-let computer = '0'
+let player1 = 'x'
+let player2 = 'o'
+let turn = 0
 
-const playerMoveNone = null;
-const computerMoveNone = null;
+$('.board-square').on('click', function() {
+    if ($(this).text() !== ""){
+        return
+    }
+    if (turn %2 === 0){
+        $(this).text(player1)
+    } else {
+        $(this).text(player2)
+    }
+    winner()
+    turn++
 
-const move = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+    if(turn === 9) {
+        alert('It is a draw losers')
+    }
+})
 
-const randomIndex = Math.random() * move.length;
-
-computer.move = move[randomIndex];
-
-player.move = .board-square.click()
-
-for (let i = 0; i = <= move.length; i++) {
-    if (player.move = move[0] && move[1] && move[2])
-    console.log('Player Wins!')
-    if (player.move = move[3] && move[4] && move[5])
-    console.log('Player Wins!')
-    if (player.move = move[6] && move[7] && move[8])
-    console.log('Player Wins!')
-    if (player.move = move[0] && move[3] && move[6])
-    console.log('Player Wins!')
-    if (player.move = move[1] && move[4] && move[7])
-    console.log('Player Wins!')
-    if (player.move = move[2] && move[5] && move[8])
-    console.log('Player Wins!')
-    if (player.move = move[0] && move[4]&& move [8])
-    console.log('Player Wins!')
-    if (player.move = move[2] && move[4] && move[6])
-    console.log('Player Wins!')
+const winner = function() {
+        if ($('#1').text() === player1 && $('#2').text() === player1  && $('#3').text() === player1) {
+            alert(`Player One Wins!`)
     
-    //To do:
-    //if move is selected by computer, don't allow player to select.
+    }
+        if ($('#4').text() === player1 && $('#5').text() === player1  && $('#6').text() === player1) {
+            alert(`Player One Wins!`)
+        
+    }
+        if ($('#7').text() === player1 && $('#8').text() === player1  && $('#9').text() === player1) {
+            alert(`Player One Wins!`)
+            
+    }
+        if ($('#1').text() === player1 && $('#4').text() === player1  && $('#7').text() === player1) {
+            alert(`Player One Wins!`)
+                
+    }
+        if ($('#2').text() === player1 && $('#5').text() === player1  && $('#8').text() === player1) {
+            alert(`Player One Wins!`)
 
+    }             
+        if ($('#3').text() === player1 && $('#6').text() === player1  && $('#9').text() === player1) {
+            alert(`Player One Wins!`)
+                    
+    }
+        if ($('#1').text() === player1 && $('#5').text() === player1  && $('#9').text() === player1) {
+            alert(`Player One Wins!`)
+                    
+    }
+        if ($('#3').text() === player1 && $('#5').text() === player1  && $('#7').text() === player1) {
+        alert(`Player One Wins!`)
+                
+    }
 
-}
+        if ($('#1').text() === player2 && $('#2').text() === player2  && $('#3').text() === player2) {
+            alert(`Player Two Wins!`)
+    
+    }
+        if ($('#4').text() === player2 && $('#5').text() === player2  && $('#6').text() === player2) {
+            alert(`Player Two Wins!`)
+        
+    }
+        if ($('#7').text() === player2 && $('#8').text() === player2  && $('#9').text() === player2) {
+            alert(`Player Two Wins!`)
+            
+    }
+        if ($('#1').text() === player2 && $('#4').text() === player2  && $('#7').text() === player2) {
+            alert(`Player Two Wins!`)
+                
+    }
+        if ($('#2').text() === player2 && $('#5').text() === player2  && $('#8').text() === player2) {
+            alert(`Player Two Wins!`)
 
-for (let i = 0; i = <= move.length; i++) {
-    if (computer.move = move[0] && move[1] && move[2])
-    console.log('Computer Wins!')
-    if (computer.move = move[3] && move[4] && move[5])
-    console.log('Computer Wins!')
-    if (computer.move = move[6] && move[7] && move[8])
-    console.log('Computer Wins!')
-    if (computer.move = move[0] && move[3] && move[6])
-    console.log('Computer Wins!')
-    if (computer.move = move[1] && move[4] && move[7])
-    console.log('Computer Wins!')
-    if (computer.move = move[2] && move[5] && move[8])
-    console.log('Computer Wins!')
-    if (computer.move = move[0] && move[4]&& move [8])
-    console.log('Computer Wins!')
-    if (computer.move = move[2] && move[4] && move[6])
-    console.log('Computer Wins!')
+    }             
+        if ($('#3').text() === player2 && $('#6').text() === player2  && $('#9').text() === player2) {
+            alert(`Player Two Wins!`)
+                    
+    }
+        if ($('#1').text() === player2 && $('#5').text() === player2  && $('#9').text() === player2) {
+            alert(`Player Two Wins!`)
+                    
+    }   
+        if ($('#3').text() === player2 && $('#5').text() === player2  && $('#7').text() === player2) {
+        alert(`Player Two Wins!`)
+      
+    }
+    console.log(turn)
+ 
 
-    //To do:
-    //if move is selected by computer, don't allow player to select.
+};
 
+winner()
 
-}
+$('button').on('click', function() {
+    $('.board-square').empty();
+    turn = 0
+ })
