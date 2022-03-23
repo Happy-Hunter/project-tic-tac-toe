@@ -3,9 +3,14 @@ h1 {
     color: blue;
 }
 
+p {
+  text-align: center;
+    color: blue;
+}
 .container {
     max-width: 960px;
     margin: 0 auto;
+    font-family: sans-serif;
 }
 
 .board {
@@ -13,9 +18,10 @@ h1 {
     grid-gap: 10px;
     grid-template-columns: auto auto auto;
     grid-template-rows: auto auto auto;
-    padding: 10px;
+    padding: 30px;
     border-color: #f321ad;
     background-color: #f321ad;
+    border: 1px solid rgba(0, 0, 0, 0.8);
 
   }
 .board-square {
@@ -23,7 +29,22 @@ h1 {
     border: 1px solid rgba(0, 0, 0, 0.8);
     padding: 20px;
     font-size: 30px;
-    text-align: center;
-    
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   } 
 
+.player1 {
+    color: limegreen;
+    ;
+  }
+
+.player2 {
+    color: green;
+    
+  }
+
+.reset{
+  margin-top: 20px;
+}

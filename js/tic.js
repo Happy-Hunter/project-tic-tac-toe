@@ -8,15 +8,15 @@ $('.board-square').on('click', function() {
         return
     }
     if (turn %2 === 0){
-        $(this).text(player1)
+        $(this).text(player1).addClass('player1')
     } else {
-        $(this).text(player2)
+        $(this).text(player2).addClass('player2')
     }
     winner()
     turn++
 
     if(turn === 9) {
-        alert('It is a draw losers')
+        alert('It\'\s is a draw,\ losers.')
     }
 })
 
