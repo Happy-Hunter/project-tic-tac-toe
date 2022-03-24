@@ -30,3 +30,12 @@ _italics_ or *bold*
 
 ![alt text here] (image URL goes here)
 
+
+Table of contents
+Illustrations
+Scope of functionalities 
+Examples of use
+Project status 
+Sources
+Other information
+
