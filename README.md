@@ -32,7 +32,7 @@ The game is noughts & crosses (or tic-tac-toe if you're American). It's a two pl
 * CSS
 * jQuery
 
-## Thank-you
+##Thank-you
 
 To [Hugh] (https://github.com/Hughsin23/) for the marathon hand-holding effort. To [Ai] (https://github.com/aibate) and [Kris] (https://github.com/kristabel-wong) for the help, and [Joel] (https://github.com/wofockham/) for not giving me the out to drop out on day 3 of this course.
 
