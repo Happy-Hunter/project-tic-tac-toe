@@ -27,8 +27,7 @@ p {
 .board-square {
     background-color: rgba(255, 255, 255, 0.8);
     border: 1px solid rgba(0, 0, 0, 0.8);
-    padding: 20px;
-    font-size: 30px;
+    padding: 0px;
     height: 200px;
     display: flex;
     justify-content: center;
@@ -37,15 +36,28 @@ p {
 
 .player1 {
     color: limegreen;
-    ;
+    font-size: 100px;
   }
 
 .player2 {
     color: green;
+    font-size: 100px;
     
   }
 
 .reset{
   margin-top: 20px;
   margin-bottom: 40px;
+}
+
+.corgi {
+  visibility: hidden;
+  z-index: -1
+}
+
+.corgi.show {
+  visibility: visible;
+  z-index: 200;
+  
+
 }

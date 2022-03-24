@@ -17,26 +17,28 @@ $('.board-square').on('click', function() {
 
     if(turn === 9) {
         alert('It\'\s is a draw,\ losers.')
+        $('.corgi').addClass('show')
     }
 
 })
 
-// const img = document.getElementsByTagName('img');
+const img = document.getElementsByTagName('img')[0];
 
-// img.style.left = '0px';
+img.style.left = '0px';
 
-// const corgi = function() {
-//   let oldLeft = parseInt(img.style.left);
-//   let newLeft = oldLeft + 1;
-//   console.log(oldLeft);
-//   console.log(newLeft);
-//   if(newLeft === 960){
-//       oldLeft = 0;
-//       newLeft = 0;
-//   }
-//   img.style.left = newLeft + 'px';
-// };
-// setInterval(corgi, 0.2);
+const corgi = function() {
+  let oldLeft = parseInt(img.style.left);
+  let newLeft = oldLeft + 1;
+  console.log(oldLeft);
+  console.log(newLeft);
+  if(newLeft === 960){
+      oldLeft = 0;
+      newLeft = 0;
+  }
+  img.style.left = newLeft + 'px';
+};
+setInterval(corgi, 0.5);
+
 
 
 const winner = function() {
@@ -49,6 +51,7 @@ const winner = function() {
         $('#1').text() === player1 && $('#5').text() === player1  && $('#9').text() === player1 ||
         $('#3').text() === player1 && $('#5').text() === player1  && $('#7').text() === player1 ) {
 
+        turn = 0
         alert(`Player One Wins!`)}
             
     if ($('#1').text() === player2 && $('#2').text() === player2  && $('#3').text() === player2 ||
@@ -59,7 +62,8 @@ const winner = function() {
         $('#3').text() === player2 && $('#6').text() === player2  && $('#9').text() === player2 ||
         $('#1').text() === player2 && $('#5').text() === player2  && $('#9').text() === player2 ||
         $('#3').text() === player2 && $('#5').text() === player2  && $('#7').text() === player2 ) {
-
+        
+        turn = 0    
         alert(`Player Two Wins!`)}
   
 }
@@ -70,5 +74,6 @@ winner()
 
 $('button').on('click', function() {
     $('.board-square').empty();
+    $('.corgi').removeClass('show');
     turn = 0
  })
